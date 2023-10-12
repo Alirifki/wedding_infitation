@@ -79,7 +79,8 @@ backdrop-filter: blur(4px);
 
 .home h2,
 .info h2,
-.story h2 {
+.story h2,
+.galeri h2 {
     color: var(--pink);
     font-family: 'Sacramento';
     font-size: 5rem;
@@ -149,12 +150,14 @@ backdrop-filter: blur(4px);
    
 }
 
-.story {
+.story,
+.galeri {
     padding-top: 10rem;
     padding-bottom: 8rem;
 }
 
-.story span{
+.story span,
+.galeri span {
     text-transform: uppercase;
     color: #666;
     font-size: 0.9rem;
@@ -162,7 +165,7 @@ backdrop-filter: blur(4px);
     display: block;
     margin-bottom: 1rem;
 }
-.story p{
+.story p, .galeri p {
     font-size: 1rem;
     font-weight: 300;
 }
@@ -241,7 +244,34 @@ backdrop-filter: blur(4px);
     right: -13px;
 }
 
+.timeline li.timeline-inverted .timeline-panel {
+  float: right;
+}
+
+.timeline li.timeline-inverted .timeline-panel::before {
+    border-right-width: 15px;
+    border-left-width: 0;
+    left: -15px;
+    right: auto;
+}
+
+.timeline li.timeline-inverted .timeline-panel::after {
+    border-right-width: 14px;
+    border-left-width: 0;
+    left: -13px;
+    right: auto;
+}
+
+.galeri {
+    background-color: #f5f5f5;
+}
 /* Media Query */
+
+/* Extra Large */
+@media (max-width : 1200px){
+    
+}
+
 /* Laptop */
 @media (max-width: 992px) {
     html{
@@ -250,7 +280,32 @@ backdrop-filter: blur(4px);
     .simply-countdown > .simply-section {
         padding: 70px;
     }
-    
+
+    .timeline::before{
+        left : 60px;
+    }
+    .timeline li .timeline-image{
+        left: 15px;
+        margin-left: 45px;
+        top: 16px;
+    }
+    .timeline li .timeline-panel{
+        width: calc((100%-200px));
+        float: right;
+    }
+    .timeline li .timeline-panel::before{
+        border-left-width: 0;
+        border-right-width: 15px;
+        left: -15px;
+        right: auto;
+    }
+    .timeline li .timeline-panel::after{
+        border-left-width: 0;
+        border-right-width: 14px;
+        left: -13px;
+        right: auto;
+    }
+
 }
 /* Tablet */
 @media (max-width: 768px) {
@@ -269,6 +324,11 @@ backdrop-filter: blur(4px);
     .sticky-top{
         overflow: hidden;
     }
+    .timeline li .timeline-image{
+        width: 100px;
+        height: 100px;
+    }
+
 }
 /* Mobile Phone */
 @media (max-width: 576px) {
@@ -281,5 +341,20 @@ backdrop-filter: blur(4px);
     }
     .sticky-top{
         overflow: hidden;
+    }
+    timeline li .timeline-image{
+        width: 80px;
+        height: 80px;
+    }
+
+    .timeline li .timeline-panel {
+        width: 65%;
+        transform: translateX(-10px);
+    }
+    .timeline li .timeline-panel::before{
+        top :30px;
+    }
+    .timeline li .timeline-panel::after{
+        top :31px;
     }
 }
