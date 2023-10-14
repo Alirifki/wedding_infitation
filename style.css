@@ -380,7 +380,7 @@ footer li{
 
 }
 /* Mobile Phone */
-@media (max-width: 576px) {
+@media (max-width: 480px) {
     html{
         font-size: 60%;
     }
@@ -391,7 +391,7 @@ footer li{
     .sticky-top{
         overflow: hidden;
     }
-    timeline li .timeline-image{
+    .timeline li .timeline-image{
         width: 80px;
         height: 80px;
     }
