@@ -24,15 +24,16 @@
   <body>
     <!-- Hero -->
     <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
-        <mail>
+        <main>
             <h4>Kepada Bapak/Ibu/saudara/i,</h4>
             <h1>Nurul & Ali</h1>
             <p> Akan Melangsungkan Pernikahan dalam: </p>
             <div class="simply-countdown"></div>
-        <a href="#undangan" class="btn btn-lg">Lihat Undangan</a>
-        </mail>
+        <a href="#home" class="btn btn-lg mt-4" onclick = "enableScroll()">Lihat Undangan</a>
+        </main>
     </section>
 
+    <!-- navabr -->
     <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
         <div class="container">
           <a class="navbar-brand" href="#">Nurul & Ali</a>
@@ -41,7 +42,7 @@
           </button>
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Sinta & Zamroni</h5>
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Nurul & Ali</h5>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
@@ -51,14 +52,15 @@
                     <a class="nav-link" href="#story">Story</a>
                     <a class="nav-link" href="#galeri">Galeri</a>
                     <a class="nav-link" href="#rsvp">RSVP</a>
-                    <a class="nav-link" href="#gift">Gift</a>
+                    <a class="nav-link" href="#gifts">Gifts</a>
                   </div>
             </div>
           </div>
         </div>
     </nav>
 
-    <section id="home" class="home">
+    <!-- Home -->
+    <section id ="home" class="home">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8 text-center">
@@ -97,6 +99,7 @@
         </div>
     </section>
 
+    <!-- info -->
     <section id="info" class="info">
         <div class="container">
             <div class="row justify-content-center">
@@ -162,6 +165,7 @@
         </div>
     </section>
 
+    <!-- Story -->
     <section id="story" class="story">
         <div class="container">
             <div class="row justify-content-center">
@@ -229,6 +233,7 @@
         </div>
     </section>
 
+    <!-- Galeri -->
     <section id="galeri" class="galeri">
         <div class="contaner">
             <div class="row justify-content-center">
@@ -264,6 +269,100 @@
         </div>
     </section>
     
+    <section id="rsvp" class="rsvp">
+        <div class="contaner">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-10 text-center">
+                    <h2>Konfirmasi Kehadiran</h2>
+                    <p>Isi form kehadiran dibawah ini untuk melakukan Konfirmasi kehadiran</p>
+                </div>
+            </div>
+
+            <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="post" action="https://script.google.com/macros/s/AKfycby8aEPYA4ubnRhJX8XYU97walP1IOOdsJ6ZVi6d4ced7Vb7r0Q5cqJtbF2Y9SHPzJ-9/exec" id="my-form">
+                <div class="col-12">
+                    <div class="mb-3">
+                        <label for="nama" class="form-label">Nama</label>
+                        <input type="text" class="form-control" id="Nama" name="nama">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="mb-3">
+                        <label for="jumlah" class="form-label">Jumlah</label>
+                        <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="5" length="1" value="1">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="mb-3">
+                        <label for="status" class="form-label">Konfirmasi</label>
+                        <select name="status" id="status" class="form-select">
+                            <option selected>Pilih Salah satu</option>
+                            <option value="Hadir">Hadir</option>
+                            <option value="Tidak Hadir">TIdak Hadir</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-12" style="margin-top: 35px;">
+                   <button class="btn btn-primary">Kirim</button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <section id="gifts" class="gifts">
+        <div class="contaner">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-10 text-center">
+                    <span>Ungkapan Tanda Kasih</span>
+                    <h2>Kirim Hadiah</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center text-center">
+                <div class="col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <div class="fw-bold">MANDIRI</div>
+                            123456789 - Mohammad Ali Rifki
+                        </li>
+                        <li class="list-group-item">
+                            <div class="fw-bold">MANDIRI</div>
+                            123456789 - Mohammad Ali Rifki
+                        </li>
+                        <li class="list-group-item">
+                            <div class="fw-bold">MANDIRI</div>
+                            123456789 - Mohammad Ali Rifki
+                        </li>
+                      </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <small class="block">&copy; 2023 Nurul wedding. All Rights Reserved</small>
+                    <small class="block">Design by <a href="https://wa.me/+62083162153929">Ali</a></small>
+
+                    <ul class="mt-3">
+                        <li>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-youtube"></i></a>
+                            <a href="#"><i class="bi bi-tiktok"></i></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
     <script> simplyCountdown('.simply-countdown', {
@@ -290,6 +389,45 @@
             stickyTop.style.overflow = 'hidden';
         });
         </script>
-   
+        <script>
+            const rootElement = document.querySelector(':root')
+            
+            function disableScroll(){
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+                
+                window.onscroll = function () {
+                    window.scrollTo(scrollTop, scrollLeft);
+                }
+                
+                rootElement.style.scrollBehavior = "auto";
+            }
+            function enableScroll (){
+                window.onscroll = function () {}
+                rootElement.style.scrollBehavior = "smooth";
+                localStorage.setItem('opened', 'true');
+            }
+            if(!localStorage.getItem('opened','false')){
+                disableScroll();
+            }
+        </script>
+    <script>
+        window.addEventListener("load", function() {
+  const form = document.getElementById('my-form');
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const action = e.target.action;
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    })
+    .then(() => {
+      alert("Konfirmasi Kehadiran Berhasil Terkirim!");
+    })
+  });
+});
+
+    </script>
   </body>
 </html>
